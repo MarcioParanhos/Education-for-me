@@ -1,0 +1,75 @@
+.ambiente {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ambiente h1 {
+  font-size: 2rem;
+}
+.search_form {
+  max-width: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.search_form img {
+  width: 18px;
+}
+.search_form input {
+  margin-right: 10px;
+  width: 50%;
+}
+.search_form button {
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: #ff725e;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #fbf8f3;
+  transition: 0.4s;
+}
+.search_form button:hover {
+  background-color: #ff825e;
+}
+.title_quests {
+  text-align: center;
+}
+.noquests {
+  text-align: center;
+}
+.noquests p {
+  margin-bottom: 1.5em;
+  color: #232323;
+}
+.noquests a {
+  margin-top: 15px;
+  padding: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: #ff725e;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #fbf8f3;
+  transition: 0.4s;
+}
+
+.noquests a:hover {
+  background-color: #ff825e;
+}
+.cards {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+ flex-wrap: wrap;
+ gap: 10px;
+}
