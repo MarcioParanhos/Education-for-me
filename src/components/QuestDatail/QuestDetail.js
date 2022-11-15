@@ -15,7 +15,7 @@ const QuestDetail = ({ quest }) => {
             <p key={tag}>{tag}</p>
           ))}
         </div>
-        <Link to={`/quests/${quest.id}`}>Ler</Link>
+        <Link to={`/quests/${quest.id}`}>ver conteudo</Link>
       </div>
     </div>
   )
