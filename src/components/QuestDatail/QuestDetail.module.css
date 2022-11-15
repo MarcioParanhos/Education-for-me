@@ -11,13 +11,19 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  width: 420px;
+  width: 45vw;
   text-align: center;
-  gap: 10px;
-  border: 1px solid #232323;
+  gap: 10px;  
+  border: 2px solid #232323;
   border-radius: 5px;
 }
 .card_quests a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 5px;
   font-size: 1em;
   text-transform: uppercase;
@@ -25,11 +31,11 @@
   border-radius: 3px;
   background-color: #ff725e;
   border: 2px solid transparent;
-  cursor: pointer;
+  cursor: pointer;  
   color: #fbf8f3;
   transition: 0.4s;
-  -webkit-filter: drop-shadow(50px 50px 5px #232323);
-  filter: drop-shadow(0px 10px 5px #232323);
+  -webkit-filter: drop-shadow(50px 50px 5px #ccc);
+  filter: drop-shadow(0px 10px 5px #ccc);
 }
 .card_quests a:hover {
   background-color: #ff825e;
@@ -45,8 +51,8 @@
     font-size: 0.8em;
     color: #fbf8f3;
     background-color: #232323;
-    padding: 3px;
-    border-radius: 6px;
+    padding: 4px;
+    border-radius: 3px;
     margin-bottom: 10px;
 }
 .card_quests span {
@@ -56,10 +62,10 @@
 .card_quests p {
     font-size: 0.8em;
     text-align: start;
-    font-style: italic;
 }
 .card_quests h2 {
     margin-bottom: 1.5em;
-    font-weight: 500;
+    font-weight: 800;
+    color: #ff725e;
 }
 

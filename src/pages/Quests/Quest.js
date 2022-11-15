@@ -60,7 +60,7 @@ const Quest = () => {
 
     return (
         <div className={styles.form_container}>
-            <h2>Faça uma Pergunta</h2>
+            <h2>Poste uma ou varias frases</h2>
             <p>Faça uma Pegunta e compartilhe suas duvidas</p>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -77,7 +77,7 @@ const Quest = () => {
                     <span>Conteúdo:</span>
                     <textarea
                         name="body" required
-                        placeholder='Isira o conteudo da sua pergunta'
+                        placeholder='Insira o conteudo da sua frase'
                         rows="8"
                         onChange={(e) => setBody(e.target.value)}
                         value={body}
@@ -88,12 +88,12 @@ const Quest = () => {
                     <input
                         type="text"
                         name='tags' required
-                        placeholder='insira as tags separadas por virgula. Exemplo: Celulas, Biologia'
+                        placeholder='insira as tags separadas por virgula. Exemplo: Amor, Reflexão'
                         onChange={(e) => setTags(e.target.value)}
                         value={tags}
                     />
                 </label>
-                {!response.loading && <button className={styles.form_btn}>Perguntar</button>}
+                {!response.loading && <button className={styles.form_btn}>Postar</button>}
                 {response.loading && (<button className={styles.form_btn} disabled>Aguarde...</button>)}
                 {response.error && <p className={styles.error}>{response.error}</p>}
                 {formError && <p className={styles.error}>{formError}</p>}

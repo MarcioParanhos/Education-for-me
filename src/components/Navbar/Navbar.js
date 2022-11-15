@@ -38,7 +38,7 @@ const Navbar = () => {
                         <NavLink to="/dashboard" className={({ isActive }) => (isActive ? styles.active : "")}>Dashboard</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/quest/create" className={({ isActive }) => (isActive ? styles.active : "")}>Perguntas<img className={styles.plus} src={plus} alt="" /></NavLink>
+                        <NavLink to="/quest/create" className={({ isActive }) => (isActive ? styles.active : "")}>Frases<img className={styles.plus} src={plus} alt="" /></NavLink>
                     </li>
                     </>
                    )}

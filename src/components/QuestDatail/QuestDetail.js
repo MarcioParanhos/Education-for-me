@@ -9,7 +9,7 @@ const QuestDetail = ({ quest }) => {
       <div className={styles.card_quests}>
         <h2>{quest.title}</h2>
         <hr></hr>
-        <p>Perguntado por <span>{quest.createdBy}</span></p>
+        <p>Postado por <span>{quest.createdBy}</span></p>
         <div className={styles.tags}>
           {quest.tagsArray.map((tag) => (
             <p key={tag}>{tag}</p>
