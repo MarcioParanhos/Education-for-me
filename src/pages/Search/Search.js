@@ -1,4 +1,6 @@
 import styles from './Search.module.css'
+import { NavLink } from 'react-router-dom'
+import seta_esquerda from './seta-para-a-esquerda.svg'
 
 // hooks
 import { useFetchDocuments } from '../../hooks/useFetchDocuments'
@@ -16,7 +18,16 @@ const Search = () => {
 
     return (
         <div className={styles.search_container}>
-            <h2>Resultado de sua Busca</h2>
+            <div className={styles.top_title}>
+                <h2>Resultado de sua Busca</h2>
+                <NavLink className={styles.nav_link} to={'/'}>
+                    <button className={styles.btn}>
+                        <img src={seta_esquerda} alt="" srcset="" />
+                        Voltar
+                    </button>
+                </NavLink>
+
+            </div>
             <div className={styles.quests_cards}>
                 {quests && quests.length === 0 && (
                     <div className={styles.noquests}>

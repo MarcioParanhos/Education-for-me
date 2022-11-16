@@ -26,7 +26,7 @@ const Ambiente = () => {
 
   return (
     <div className={styles.ambiente}>
-      <h1>Veja as frasess mais recentes</h1>
+      <h1>Veja as frases mais recentes</h1>
       <form onSubmit={handleSubmit} className={styles.search_form}>
         <input type="text" placeholder='Busque por tags...' onChange={(e) => setQuery(e.target.value)} />
         <button className={styles.btn}><img src={searchIcon} /></button>

@@ -21,6 +21,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Ambiente from './pages/Ambiente/Ambiente';
 import Quest from './pages/Quests/Quest';
 import Search from './pages/Search/Search';
+import Post from './pages/Post/Post';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
             <Route path='/' element={!user ? <Home /> : <Navigate to='/ambiente' />} />
             <Route path="/about" element={user ? <About /> : <Navigate to='/login' />} />
             <Route path="/search" element={user ? <Search /> : <Navigate to='/login' />} />
+            <Route path="/quests/:id" element={user ? <Post /> : <Navigate to='/login' />} />
             <Route path='/login' element={!user ? <Login /> : <Navigate to='/' />} />
             <Route path='/register' element={!user ? <Register /> : <Navigate to='/' />} />
             <Route path='/quest/create' element={user ? <Quest /> : <Navigate to="/login" />} />
